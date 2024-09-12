@@ -1,0 +1,18 @@
+[package]
+name = "winsftp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winapi = { version = "0.3", features = ["processenv","winbase"] }
+
+eframe = "0.28.1"
+egui = "0.28.1"
+rfd = "0.14.1"
+tokio = { version = "1", features = ["full"] }
+regex = { version = "1.10.6"  }
+
+env_logger = { version = "0.10", default-features = false, features = [
+    "auto-color",
+    "humantime",
+] }
